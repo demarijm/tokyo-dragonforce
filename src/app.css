@@ -1,48 +1,23 @@
 @import '@fontsource/fira-mono';
+@import url('//db.onlinewebfonts.com/c/88f10bf18a36407ef36bf30bc25a3618?family=Suisse+Intl');
+
 
 :root {
-  font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  --font-mono: 'Fira Mono', monospace;
-  --pure-white: #ffffff;
-  --primary-color: #b9c6d2;
-  --secondary-color: #d0dde9;
-  --tertiary-color: #edf0f8;
-  --accent-color: #ff3e00;
-  --heading-color: rgba(0, 0, 0, 0.7);
-  --text-color: #444444;
-  --background-without-opacity: rgba(255, 255, 255, 0.7);
-  --column-width: 42rem;
-  --column-margin-top: 4rem;
+  font-family: Suisse Intl, -apple-system, BlinkMacSystemFont;
+  @font-face {font-family: "Suisse Intl"; src: url("//db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.eot"); src: url("//db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.woff") format("woff"), url("//db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.svg#Suisse Intl") format("svg"); }
+
 }
 
 body {
   min-height: 100vh;
   margin: 0;
-  background-color: var(--primary-color);
-  background: linear-gradient(
-    180deg,
-    var(--primary-color) 0%,
-    var(--secondary-color) 10.45%,
-    var(--tertiary-color) 41.35%
-  );
+  cursor: url("https://github.com/chenglou/react-motion/raw/master/demos/demo8-draggable-list/cursor.png")
+  39 39, auto;
+  background-color: #0D0D0D;
+  overflow-x: hidden;
 }
 
-body::before {
-  content: '';
-  width: 80vw;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 10vw;
-  z-index: -1;
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    var(--pure-white) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  opacity: 0.05;
-}
+
 
 #svelte {
   min-height: 100vh;
@@ -104,4 +79,5 @@ button:focus:not(:focus-visible) {
   h1 {
     font-size: 2.4rem;
   }
+
 }
