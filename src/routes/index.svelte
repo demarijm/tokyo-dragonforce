@@ -34,15 +34,17 @@ import AboutSection from '$lib/AboutSection.svelte';
       <div class="marquee">
 
         <Marquee pauseOnHover={true} direction='right' play={play}>
-          <h1 class="marquee-text">DEMARI</h1>
-          <h1 class="dot">&#183;</h1>
+          <div>
+            <h1 class="marquee-text text-white">DEMARI</h1>
+
+          </div>
           <h1 class="marquee-text">MILLER</h1>
           <h1 class="marquee-text">DEMARI</h1>
           <h1 class="dot">&#183;</h1>
           <h1 class="marquee-text">MILLER</h1>
         </Marquee>
       </div>
-    </div>
+    </div> 
     <AboutSection />
 
 
@@ -60,13 +62,14 @@ import AboutSection from '$lib/AboutSection.svelte';
   .marquee {
     position: absolute;
     bottom: 0;
+    display: border-box;
   }
   .marquee-text {
     font-size: 8rem;
     color: white;
     text-shadow: 0 0 10px black;
     line-height: 0%;
-    font-weight: 400;
+    font-weight: 200;
   }
   .dot {
     font-size: 6rem;
